@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Clock, DollarSign, Calendar, Download } from 'lucide-react';
+import { ArrowDown, Clock, DollarSign, Calendar, Download, Zap } from 'lucide-react';
 import { heroData } from '../../data/proposalData';
 
 export default function Hero() {
@@ -85,7 +85,14 @@ export default function Hero() {
           <div className="bg-surface-light/60 backdrop-blur-lg border border-border rounded-2xl p-6 hover:border-primary/30 transition-colors duration-300">
             <Calendar className="w-5 h-5 text-primary-light mb-3 mx-auto" />
             <p className="text-2xl font-bold text-white">{heroData.timeline}</p>
-            <p className="text-sm text-text-muted mt-1">To Production Launch</p>
+            <p className="text-sm text-text-muted mt-1">Standard Estimate</p>
+            <div className="mt-3 pt-3 border-t border-border/50">
+              <div className="flex items-center justify-center gap-1.5 mb-1">
+                <Zap size={12} className="text-accent" />
+                <p className="text-xs text-accent font-medium">With Claude Code</p>
+              </div>
+              <p className="text-lg font-bold text-white">~18 Weeks</p>
+            </div>
           </div>
         </motion.div>
 
