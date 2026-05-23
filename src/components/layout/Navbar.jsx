@@ -6,21 +6,9 @@ import { navItems } from '../../data/proposalData';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
-      const sections = navItems.map(item => item.href.replace('#', ''));
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
-        if (el && el.getBoundingClientRect().top <= 100) {
-          setActiveSection(sections[i]);
-          break;
-        }
-      }
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -31,54 +19,37 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-surface/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-black/10'
-            : 'bg-transparent'
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-10 h-[60px] bg-[rgba(13,15,26,0.88)] backdrop-blur-xl border-b border-primary/25"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
-            <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LS</span>
-              </div>
-              <span className="text-lg font-bold text-white">Legacy Scale</span>
-            </a>
+        <a href="#" className="font-[family-name:var(--font-heading)] font-extrabold text-base tracking-[-0.02em]">
+          Legacy<span className="text-primary">Scale</span>
+        </a>
 
-            <div className="hidden lg:flex items-center gap-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
-                    activeSection === item.href.replace('#', '')
-                      ? 'text-primary-light bg-primary/10'
-                      : 'text-text-muted hover:text-white hover:bg-surface-lighter'
-                  }`}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
-
-            <div className="hidden lg:block">
-              <a
-                href="#cta"
-                className="px-5 py-2.5 bg-primary hover:bg-primary-light text-white text-sm font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40"
-              >
-                Let's Build
-              </a>
-            </div>
-
-            <button
-              onClick={() => setIsMobileOpen(true)}
-              className="lg:hidden p-2 text-text-muted hover:text-white"
+        <div className="hidden lg:flex gap-6">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-xs text-white/50 uppercase tracking-[0.08em] font-medium hover:text-white transition-colors"
             >
-              <Menu size={24} />
-            </button>
-          </div>
+              {item.label}
+            </a>
+          ))}
         </div>
+
+        <a
+          href="#cta"
+          className="hidden lg:inline-block text-xs font-medium px-4 py-1.5 bg-primary text-white rounded-md hover:opacity-85 transition-opacity"
+        >
+          View Proposal
+        </a>
+
+        <button
+          onClick={() => setIsMobileOpen(true)}
+          className="lg:hidden p-2 text-text-muted hover:text-white"
+        >
+          <Menu size={24} />
+        </button>
       </motion.nav>
 
       <AnimatePresence>
@@ -99,7 +70,7 @@ export default function Navbar() {
               className="fixed top-0 right-0 bottom-0 w-80 bg-surface-light border-l border-border z-50 p-6"
             >
               <div className="flex justify-between items-center mb-8">
-                <span className="text-lg font-bold text-white">Menu</span>
+                <span className="font-[family-name:var(--font-heading)] font-extrabold text-lg">Legacy<span className="text-primary">Scale</span></span>
                 <button onClick={() => setIsMobileOpen(false)} className="p-2 text-text-muted hover:text-white">
                   <X size={24} />
                 </button>
@@ -110,7 +81,7 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileOpen(false)}
-                    className="px-4 py-3 rounded-xl text-base font-medium text-text-muted hover:text-white hover:bg-surface-lighter transition-colors"
+                    className="px-4 py-3 rounded-xl text-sm text-white/50 uppercase tracking-[0.08em] font-medium hover:text-white hover:bg-surface-lighter transition-colors"
                   >
                     {item.label}
                   </a>
@@ -118,9 +89,9 @@ export default function Navbar() {
                 <a
                   href="#cta"
                   onClick={() => setIsMobileOpen(false)}
-                  className="mt-4 px-4 py-3 bg-primary hover:bg-primary-light text-white text-center font-semibold rounded-xl transition-all"
+                  className="mt-4 px-4 py-3 bg-primary text-white text-center text-sm font-medium rounded-lg"
                 >
-                  Let's Build
+                  View Proposal
                 </a>
               </div>
             </motion.div>

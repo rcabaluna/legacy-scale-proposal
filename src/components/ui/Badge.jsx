@@ -6,6 +6,7 @@ export default function Badge({ children, variant = 'default', className = '' })
     success: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
     warning: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
     danger: 'bg-red-500/10 text-red-400 border-red-500/20',
+    violet: 'bg-violet-500/10 text-violet-400 border-violet-500/20',
   };
 
   return (
