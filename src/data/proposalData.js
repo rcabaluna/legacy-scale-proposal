@@ -339,9 +339,9 @@ export const ganttData = {
       { name: "P3 — Claude AI Toolkit", col: "#059669", start: 10, end: 13, feats: [["Prompt registry + Claude SDK SSE", 10, 10], ["Rate limiting + usage logging", 10, 11], ["Marketing Copy Generator", 11, 11], ["Agency Proposal Builder", 12, 12], ["AI Business Coaching Agent", 13, 13]] },
       { name: "P4 — Calendar + Gamification", col: "#D97706", start: 14, end: 16, feats: [["FullCalendar + event CRUD + RSVP", 14, 14], ["Google Calendar full OAuth sync", 15, 15], ["BullMQ token refresh + reminders", 15, 16], ["Points engine + streaks + badges", 16, 16], ["Redis leaderboard + WebSocket", 16, 16]] },
       { name: "P5 — Admin + Analytics", col: "#DC2626", start: 17, end: 18, feats: [["User + course management", 17, 17], ["AI prompt template editor", 17, 18], ["BI analytics dashboard", 18, 18], ["Notifications + audit logs", 18, 18]] },
-      { name: "P6 — QA + Security + Launch", col: "#0EA5E9", start: 19, end: 22, feats: [["Dashboard polish + onboarding", 19, 19], ["Regression + security audit", 20, 20], ["Load testing + Lighthouse", 20, 21], ["Performance optimization", 21, 21], ["Production deploy + go-live", 22, 22]] },
+      { name: "P6 — QA + Security + Launch", col: "#0EA5E9", start: 19, end: 24, feats: [["Dashboard polish + onboarding", 19, 20], ["Regression + security audit", 20, 21], ["Load testing + Lighthouse", 21, 22], ["Performance optimization", 22, 23], ["Production deploy + go-live", 23, 24]] },
     ],
-    milestones: { 5: "M1", 9: "M2", 13: "M3", 16: "M4", 18: "M5", 22: "M6" },
+    milestones: { 5: "M1", 9: "M2", 13: "M3", 16: "M4", 18: "M5", 24: "M6" },
   },
   accelerated: {
     totalWeeks: 20,
