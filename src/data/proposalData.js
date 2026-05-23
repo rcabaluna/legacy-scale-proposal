@@ -282,7 +282,7 @@ export const investmentData = {
     "Timesheet submitted every Friday with accumulated hours",
     "Invoice issued same day, itemized by task and module",
     "Payment due within 5 business days",
-    "$640 kickoff deposit applied against the first week of billing. Standard across all professional services — confirms commitment from both sides before significant work begins. Can be held in Upwork escrow if preferred.",
+    "$640 kickoff deposit (optional) applied against the first week of billing. Confirms commitment from both sides before significant work begins.",
   ],
   comparison: {
     usDevRate: "$56,250 – $71,250",
