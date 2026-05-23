@@ -201,7 +201,7 @@ export default function Gantt() {
                     : 'text-text-muted hover:text-text-light'
                 }`}
               >
-                Standard &mdash; 22 Weeks
+                Without Claude Code &mdash; 24 Weeks
               </button>
               <button
                 onClick={() => setMode('accelerated')}
@@ -211,7 +211,7 @@ export default function Gantt() {
                     : 'text-text-muted hover:text-text-light'
                 }`}
               >
-                &#9889; Claude Code &mdash; 15 Weeks
+                &#9889; With Claude Code &mdash; 20 Weeks
               </button>
             </div>
           </div>

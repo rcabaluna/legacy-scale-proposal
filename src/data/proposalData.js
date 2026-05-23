@@ -4,7 +4,7 @@ export const heroData = {
   headlineLine2: "Built to convert.",
   tagline: "Premium agency education platform · HD video training · Gamified community · Claude AI coaching tools · Live event calendar. One platform. One subscription. Every member's data — their own.",
   rate: "$16",
-  timeline: "22 wks",
+  timeline: "24 wks",
   totalNTE: "$12,000",
   savings: "$55K+",
 };
@@ -54,28 +54,28 @@ export const techStack = [
 
 export const timelinePhases = [
   { phase: 0, name: "Foundation", weeks: "1–2", duration: 2, color: "#4F46E5", features: ["Monorepo + Docker", "AWS VPC + ECS", "CI/CD Pipeline", "Tailwind + ShadCN", "Standard SSL", "Design tokens"] },
-  { phase: 1, name: "Auth & Billing", weeks: "3–5", duration: 3, color: "#4F46E5", features: ["Clerk auth", "ADMIN / MEMBER roles", "User profiles", "Stripe Checkout", "Subscription webhooks", "Billing portal"] },
-  { phase: 2, name: "Video LMS", weeks: "6–9", duration: 4, color: "#7C3AED", features: ["Mux upload + streaming", "Progress tracking", "Course management", "Lesson completion", "Certificates", "Search + filter"] },
-  { phase: 3, name: "Claude AI Toolkit", weeks: "10–13", duration: 4, color: "#059669", features: ["Prompt registry", "SSE streaming", "Marketing copy generator", "Proposal builder", "AI coaching agent", "Usage metering"] },
-  { phase: 4, name: "Calendar & Gamification", weeks: "14–16", duration: 3, color: "#D97706", features: ["Google Cal OAuth", "Bidirectional sync", "RSVP system", "Points engine", "Streaks + badges", "Live leaderboard"] },
-  { phase: 5, name: "Admin & Analytics", weeks: "17–18", duration: 2, color: "#DC2626", features: ["User management", "BI dashboard", "Course management", "Prompt editor", "Notifications", "Audit logs"] },
-  { phase: 6, name: "QA, Security & Launch", weeks: "19–22", duration: 4, color: "#0EA5E9", features: ["Regression testing", "Security audit", "Load testing", "Lighthouse audit", "Production deploy", "Monitoring setup"] },
+  { phase: 1, name: "Auth & Billing", weeks: "3–6", duration: 4, color: "#4F46E5", features: ["Clerk auth", "ADMIN / MEMBER roles", "User profiles", "Stripe Checkout", "Subscription webhooks", "Billing portal"] },
+  { phase: 2, name: "Video LMS", weeks: "7–10", duration: 4, color: "#7C3AED", features: ["Mux upload + streaming", "Progress tracking", "Course management", "Lesson completion", "Certificates", "Search + filter"] },
+  { phase: 3, name: "Claude AI Toolkit", weeks: "11–14", duration: 4, color: "#059669", features: ["Prompt registry", "SSE streaming", "Marketing copy generator", "Proposal builder", "AI coaching agent", "Usage metering"] },
+  { phase: 4, name: "Calendar & Gamification", weeks: "15–18", duration: 4, color: "#D97706", features: ["Google Cal OAuth", "Bidirectional sync", "RSVP system", "Points engine", "Streaks + badges", "Live leaderboard"] },
+  { phase: 5, name: "Admin & Analytics", weeks: "19–21", duration: 3, color: "#DC2626", features: ["User management", "BI dashboard", "Course management", "Prompt editor", "Notifications", "Audit logs"] },
+  { phase: 6, name: "QA, Security & Launch", weeks: "22–24", duration: 3, color: "#0EA5E9", features: ["Regression testing", "Security audit", "Load testing", "Lighthouse audit", "Production deploy", "Monitoring setup"] },
 ];
 
 export const claudeCodeData = {
   label: "Development acceleration",
-  title: "⚡ With Claude Code: 15 weeks.",
-  subtitle: "Claude Code is used as an AI pair programmer throughout — cutting 7 weeks off the timeline at no extra cost.",
+  title: "⚡ With Claude Code: 20 weeks.",
+  subtitle: "Claude Code as AI pair programmer cuts 4 weeks off the realistic timeline — at no extra cost. Based on full-time 40hr/week with real-world friction factored in.",
   phases: [
-    { name: "Phase 0 — Foundation", before: "2 wks", after: "1 wk", saved: "-1 wk" },
-    { name: "Phase 1 — Auth & Billing", before: "3 wks", after: "2 wks", saved: "-1 wk" },
+    { name: "Phase 0 — Foundation", before: "2 wks", after: "2 wks", saved: "same" },
+    { name: "Phase 1 — Auth & Billing", before: "4 wks", after: "3 wks", saved: "-1 wk" },
     { name: "Phase 2 — Video LMS", before: "4 wks", after: "3 wks", saved: "-1 wk" },
     { name: "Phase 3 — Claude AI Toolkit", before: "4 wks", after: "3 wks", saved: "-1 wk" },
-    { name: "Phase 4 — Calendar + Gamification", before: "3 wks", after: "2 wks", saved: "-1 wk" },
-    { name: "Phase 5 — Admin + Analytics", before: "2 wks", after: "2 wks", saved: "same" },
-    { name: "Phase 6 — QA + Security + Launch", before: "4 wks", after: "2 wks", saved: "-2 wks" },
+    { name: "Phase 4 — Calendar + Gamification", before: "4 wks", after: "3 wks", saved: "-1 wk" },
+    { name: "Phase 5 — Admin + Analytics", before: "3 wks", after: "3 wks", saved: "same" },
+    { name: "Phase 6 — QA + Security + Launch", before: "3 wks", after: "3 wks", saved: "same" },
   ],
-  stats: { weeksSaved: "-7", hoursSaved: "~-500" },
+  stats: { weeksSaved: "-4", hoursSaved: "~-160" },
   features: [
     "Generates boilerplate, configs, and Docker files in minutes",
     "Drafts full Prisma schema from requirements in one prompt",
@@ -282,7 +282,7 @@ export const investmentData = {
     "Timesheet submitted every Friday with accumulated hours",
     "Invoice issued same day, itemized by task and module",
     "Payment due within 5 business days",
-    "$640 kickoff deposit applied against the first week of billing",
+    "$640 kickoff deposit applied against the first week of billing. Standard across all professional services — confirms commitment from both sides before significant work begins. Can be held in Upwork escrow if preferred.",
   ],
   comparison: {
     usDevRate: "$56,250 – $71,250",
@@ -310,7 +310,7 @@ export const ctaData = {
   subtitle: "Skool and Kajabi are generic. This is built specifically for Keanu's brand, his curriculum, and his community.",
   stats: [
     { value: "$16", label: "Per hour" },
-    { value: "22 wks", label: "Standard" },
+    { value: "24 wks", label: "Realistic" },
     { value: "$12,000", label: "Total NTE" },
     { value: "$640", label: "To start" },
   ],
@@ -329,9 +329,9 @@ export const navItems = [
 export const ganttData = {
   label: "Project schedule",
   title: "Week-by-week. Nothing hidden.",
-  subtitle: "Toggle between the standard 22-week plan and the Claude Code-accelerated 15-week plan.",
+  subtitle: "Toggle between the realistic 24-week plan (full-time, real-world friction) and the Claude Code-accelerated 20-week plan.",
   standard: {
-    totalWeeks: 22,
+    totalWeeks: 24,
     phases: [
       { name: "P0 — Foundation", col: "#4F46E5", start: 1, end: 2, feats: [["Monorepo + Docker + CI/CD", 1, 1], ["AWS VPC + ECS + RDS + Redis", 2, 2], ["Tailwind + ShadCN + design tokens", 1, 2], ["Standard SSL + GitHub Actions", 1, 2]] },
       { name: "P1 — Auth & Billing", col: "#6366F1", start: 3, end: 5, feats: [["Clerk auth + JWT guard", 3, 3], ["ADMIN/MEMBER roles + user profiles", 3, 4], ["Stripe Checkout + pricing page", 4, 4], ["Stripe webhooks + billing portal", 5, 5], ["Access gating by subscription status", 5, 5]] },
@@ -344,17 +344,17 @@ export const ganttData = {
     milestones: { 5: "M1", 9: "M2", 13: "M3", 16: "M4", 18: "M5", 22: "M6" },
   },
   accelerated: {
-    totalWeeks: 15,
+    totalWeeks: 20,
     phases: [
-      { name: "P0 — Foundation", col: "#4F46E5", start: 1, end: 1, feats: [["Monorepo + Docker + AWS + CI/CD", 1, 1], ["Tailwind + ShadCN + SSL", 1, 1]] },
-      { name: "P1 — Auth & Billing", col: "#6366F1", start: 2, end: 3, feats: [["Clerk auth + roles + Stripe", 2, 2], ["Webhooks + billing portal", 3, 3]] },
-      { name: "P2 — Video LMS", col: "#7C3AED", start: 4, end: 6, feats: [["Prisma schema + Mux integration", 4, 4], ["Progress tracking + certificates", 5, 6], ["Search + filter + responsive", 6, 6]] },
-      { name: "P3 — Claude AI Toolkit", col: "#059669", start: 7, end: 9, feats: [["Prompt registry + SSE streaming", 7, 7], ["Marketing Copy + Proposal Builder", 8, 8], ["AI Coaching Agent + Redis sessions", 9, 9]] },
-      { name: "P4 — Calendar + Gamification", col: "#D97706", start: 10, end: 11, feats: [["FullCalendar + Google OAuth sync", 10, 10], ["Points + streaks + leaderboard", 11, 11]] },
-      { name: "P5 — Admin + Analytics", col: "#DC2626", start: 12, end: 13, feats: [["User + course admin + BI dashboard", 12, 12], ["Notifications + audit logs", 13, 13]] },
-      { name: "P6 — QA + Security + Launch", col: "#0EA5E9", start: 14, end: 15, feats: [["Regression + security audit + load test", 14, 14], ["Production deploy + go-live", 15, 15]] },
+      { name: "P0 — Foundation", col: "#4F46E5", start: 1, end: 2, feats: [["Monorepo + Docker + AWS + CI/CD", 1, 1], ["Tailwind + ShadCN + SSL", 1, 2]] },
+      { name: "P1 — Auth & Billing", col: "#6366F1", start: 3, end: 5, feats: [["Clerk auth + roles + Stripe", 3, 4], ["Webhooks + billing portal", 4, 5]] },
+      { name: "P2 — Video LMS", col: "#7C3AED", start: 6, end: 8, feats: [["Prisma schema + Mux integration", 6, 6], ["Progress tracking + certificates", 7, 8], ["Search + filter + responsive", 8, 8]] },
+      { name: "P3 — Claude AI Toolkit", col: "#059669", start: 9, end: 11, feats: [["Prompt registry + SSE streaming", 9, 9], ["Marketing Copy + Proposal Builder", 10, 10], ["AI Coaching Agent + Redis sessions", 11, 11]] },
+      { name: "P4 — Calendar + Gamification", col: "#D97706", start: 12, end: 14, feats: [["FullCalendar + Google OAuth sync", 12, 13], ["Points + streaks + leaderboard", 13, 14]] },
+      { name: "P5 — Admin + Analytics", col: "#DC2626", start: 15, end: 17, feats: [["User + course admin + BI dashboard", 15, 16], ["Notifications + audit logs", 16, 17]] },
+      { name: "P6 — QA + Security + Launch", col: "#0EA5E9", start: 18, end: 20, feats: [["Regression + security audit + load test", 18, 19], ["Production deploy + go-live", 19, 20]] },
     ],
-    milestones: { 3: "M1", 6: "M2", 9: "M3", 11: "M4", 13: "M5", 15: "M6" },
+    milestones: { 5: "M1", 8: "M2", 11: "M3", 14: "M4", 17: "M5", 20: "M6" },
   },
   milestoneLabels: { M1: "Auth+Billing done", M2: "LMS complete", M3: "AI tools live", M4: "Cal+Gamification", M5: "Admin+Analytics", M6: "Launch" },
 };

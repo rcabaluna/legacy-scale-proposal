@@ -3,7 +3,7 @@ import RevealOnScroll from '../ui/RevealOnScroll';
 import SectionHeader from '../ui/SectionHeader';
 import { timelinePhases } from '../../data/proposalData';
 
-const totalWeeks = 22;
+const totalWeeks = 24;
 
 export default function Timeline() {
   return (
@@ -11,8 +11,8 @@ export default function Timeline() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Project timeline"
-          title="22 weeks. Every feature. Nothing missing."
-          subtitle="Seven phases. Working software at the end of every phase — not just at launch."
+          title="24 weeks. Every feature. Nothing missing."
+          subtitle="Seven phases. Working software at the end of every phase. Based on full-time 40hr/week with realistic friction — not a best-case estimate."
         />
 
         <div className="space-y-0">

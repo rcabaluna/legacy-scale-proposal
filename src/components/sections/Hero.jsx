@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
         <div className="px-8 py-4 border-b sm:border-b-0 sm:border-r border-primary/30 text-center">
           <span className="font-[family-name:var(--font-heading)] text-2xl font-extrabold text-white block">{heroData.timeline}</span>
-          <span className="text-xs text-white/40 uppercase tracking-[0.1em] font-medium">Standard timeline</span>
+          <span className="text-xs text-white/40 uppercase tracking-[0.1em] font-medium">Realistic timeline</span>
         </div>
         <div className="px-8 py-4 border-b sm:border-b-0 sm:border-r border-primary/30 text-center">
           <span className="font-[family-name:var(--font-heading)] text-2xl font-extrabold text-white block">{heroData.totalNTE}</span>
