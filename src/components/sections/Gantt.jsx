@@ -197,7 +197,7 @@ export default function Gantt() {
                 onClick={() => setMode('standard')}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                   mode === 'standard'
-                    ? 'bg-indigo-500/20 text-indigo-300 shadow-sm border border-indigo-500/30'
+                    ? 'bg-red-900/30 text-red-300 shadow-sm border border-red-500/30'
                     : 'text-text-muted hover:text-text-light'
                 }`}
               >

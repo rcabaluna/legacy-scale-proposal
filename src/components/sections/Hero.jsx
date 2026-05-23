@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden px-8 pt-28 pb-16">
       {/* Grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(79,70,229,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(79,70,229,0.07)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,black_40%,transparent_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(170,0,0,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(170,0,0,0.07)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,black_40%,transparent_100%)]" />
       {/* Glow */}
-      <div className="absolute w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(79,70,229,0.18)_0%,transparent_70%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(170,0,0,0.15)_0%,transparent_70%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}

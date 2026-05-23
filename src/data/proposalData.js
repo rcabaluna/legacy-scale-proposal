@@ -53,8 +53,8 @@ export const techStack = [
 ];
 
 export const timelinePhases = [
-  { phase: 0, name: "Foundation", weeks: "1–2", duration: 2, color: "#4F46E5", features: ["Monorepo + Docker", "AWS VPC + ECS", "CI/CD Pipeline", "Tailwind + ShadCN", "Standard SSL", "Design tokens"] },
-  { phase: 1, name: "Auth & Billing", weeks: "3–6", duration: 4, color: "#4F46E5", features: ["Clerk auth", "ADMIN / MEMBER roles", "User profiles", "Stripe Checkout", "Subscription webhooks", "Billing portal"] },
+  { phase: 0, name: "Foundation", weeks: "1–2", duration: 2, color: "#AA0000", features: ["Monorepo + Docker", "AWS VPC + ECS", "CI/CD Pipeline", "Tailwind + ShadCN", "Standard SSL", "Design tokens"] },
+  { phase: 1, name: "Auth & Billing", weeks: "3–6", duration: 4, color: "#AA0000", features: ["Clerk auth", "ADMIN / MEMBER roles", "User profiles", "Stripe Checkout", "Subscription webhooks", "Billing portal"] },
   { phase: 2, name: "Video LMS", weeks: "7–10", duration: 4, color: "#7C3AED", features: ["Mux upload + streaming", "Progress tracking", "Course management", "Lesson completion", "Certificates", "Search + filter"] },
   { phase: 3, name: "Claude AI Toolkit", weeks: "11–14", duration: 4, color: "#059669", features: ["Prompt registry", "SSE streaming", "Marketing copy generator", "Proposal builder", "AI coaching agent", "Usage metering"] },
   { phase: 4, name: "Calendar & Gamification", weeks: "15–18", duration: 4, color: "#D97706", features: ["Google Cal OAuth", "Bidirectional sync", "RSVP system", "Points engine", "Streaks + badges", "Live leaderboard"] },
@@ -333,8 +333,8 @@ export const ganttData = {
   standard: {
     totalWeeks: 24,
     phases: [
-      { name: "P0 — Foundation", col: "#4F46E5", start: 1, end: 2, feats: [["Monorepo + Docker + CI/CD", 1, 1], ["AWS VPC + ECS + RDS + Redis", 2, 2], ["Tailwind + ShadCN + design tokens", 1, 2], ["Standard SSL + GitHub Actions", 1, 2]] },
-      { name: "P1 — Auth & Billing", col: "#6366F1", start: 3, end: 5, feats: [["Clerk auth + JWT guard", 3, 3], ["ADMIN/MEMBER roles + user profiles", 3, 4], ["Stripe Checkout + pricing page", 4, 4], ["Stripe webhooks + billing portal", 5, 5], ["Access gating by subscription status", 5, 5]] },
+      { name: "P0 — Foundation", col: "#AA0000", start: 1, end: 2, feats: [["Monorepo + Docker + CI/CD", 1, 1], ["AWS VPC + ECS + RDS + Redis", 2, 2], ["Tailwind + ShadCN + design tokens", 1, 2], ["Standard SSL + GitHub Actions", 1, 2]] },
+      { name: "P1 — Auth & Billing", col: "#CC1111", start: 3, end: 5, feats: [["Clerk auth + JWT guard", 3, 3], ["ADMIN/MEMBER roles + user profiles", 3, 4], ["Stripe Checkout + pricing page", 4, 4], ["Stripe webhooks + billing portal", 5, 5], ["Access gating by subscription status", 5, 5]] },
       { name: "P2 — Video LMS", col: "#7C3AED", start: 6, end: 9, feats: [["Course/module/lesson Prisma schema", 6, 6], ["Admin course CRUD + listing page", 6, 7], ["Mux upload + webhook + Mux Player", 7, 7], ["Progress tracking API (30s heartbeat)", 8, 8], ["Certificates + enrollment management", 8, 9], ["Search + filter + mobile responsive", 9, 9]] },
       { name: "P3 — Claude AI Toolkit", col: "#059669", start: 10, end: 13, feats: [["Prompt registry + Claude SDK SSE", 10, 10], ["Rate limiting + usage logging", 10, 11], ["Marketing Copy Generator", 11, 11], ["Agency Proposal Builder", 12, 12], ["AI Business Coaching Agent", 13, 13]] },
       { name: "P4 — Calendar + Gamification", col: "#D97706", start: 14, end: 16, feats: [["FullCalendar + event CRUD + RSVP", 14, 14], ["Google Calendar full OAuth sync", 15, 15], ["BullMQ token refresh + reminders", 15, 16], ["Points engine + streaks + badges", 16, 16], ["Redis leaderboard + WebSocket", 16, 16]] },
@@ -346,8 +346,8 @@ export const ganttData = {
   accelerated: {
     totalWeeks: 20,
     phases: [
-      { name: "P0 — Foundation", col: "#4F46E5", start: 1, end: 2, feats: [["Monorepo + Docker + AWS + CI/CD", 1, 1], ["Tailwind + ShadCN + SSL", 1, 2]] },
-      { name: "P1 — Auth & Billing", col: "#6366F1", start: 3, end: 5, feats: [["Clerk auth + roles + Stripe", 3, 4], ["Webhooks + billing portal", 4, 5]] },
+      { name: "P0 — Foundation", col: "#AA0000", start: 1, end: 2, feats: [["Monorepo + Docker + AWS + CI/CD", 1, 1], ["Tailwind + ShadCN + SSL", 1, 2]] },
+      { name: "P1 — Auth & Billing", col: "#CC1111", start: 3, end: 5, feats: [["Clerk auth + roles + Stripe", 3, 4], ["Webhooks + billing portal", 4, 5]] },
       { name: "P2 — Video LMS", col: "#7C3AED", start: 6, end: 8, feats: [["Prisma schema + Mux integration", 6, 6], ["Progress tracking + certificates", 7, 8], ["Search + filter + responsive", 8, 8]] },
       { name: "P3 — Claude AI Toolkit", col: "#059669", start: 9, end: 11, feats: [["Prompt registry + SSE streaming", 9, 9], ["Marketing Copy + Proposal Builder", 10, 10], ["AI Coaching Agent + Redis sessions", 11, 11]] },
       { name: "P4 — Calendar + Gamification", col: "#D97706", start: 12, end: 14, feats: [["FullCalendar + Google OAuth sync", 12, 13], ["Points + streaks + leaderboard", 13, 14]] },
